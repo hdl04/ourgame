@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosso Joguinho</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modais.css" />
+    <link rel="shortcut icon" href="/imgs/favIcon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="secao">
+      <article id="modal-overlay" class="overlay">
+        <section id="modal-background"></section>
+        <section id="modal-container"></section>
+      </article>
+
+      <div class="principal">
+        <div id="progressBarFora">
+          <div id="progressBar"></div>
+        </div>
+        <div class="loadBar"></div>
+
+        <div class="apagados perguntas ligados">
+          <p id="perguntasA"></p>
+          <span id="questionNumber" class="ligados apagados"></span>
+        </div>
+
+        <div class="alternativas" id="alternativasA">
+          <div class="option" data-option="A">
+            <span class="circle" tabindex="0">A</span>
+            <span class="option-text"></span>
+          </div>
+          <div class="option" data-option="B">
+            <span class="circle" tabindex="0">B</span>
+            <span class="option-text"></span>
+          </div>
+          <div class="option" data-option="C">
+            <span class="circle" tabindex="0">C</span>
+            <span class="option-text"></span>
+          </div>
+          <div class="option" data-option="D">
+            <span class="circle" tabindex="0">D</span>
+            <span class="option-text"></span>
+          </div>
+          <div class="option" data-option="E">
+            <span class="circle" tabindex="0">E</span>
+            <span class="option-text"></span>
+          </div>
+        </div>
+        <div class="btns">
+          <button id="desistir">Desistir</button>
+          <button id="proxima">Próxima</button>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+:root {
+  --primary-color: #29335c;
+  --light-primary: #3f4f8d;
+  --ligthest-color: white;
+  --secondary-color: #774936;
+  --light-secondary: #b97e64;
+}
+
+#modal-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  visibility: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+#modal-background {
+  background-color: var(--light-primary);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+#modal-container {
+  z-index: 1;
+  background-color: var(--ligthest-color);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  width: 55rem;
+  height: 40rem;
+  position: relative;
+}
+
+#modalApresentacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#h2Modal {
+  color: #404040;
+  font-weight: bold;
+}
+
+.pModal {
+  font-size: 1.4rem;
+  text-align: justify;
+  color: #404040;
+  padding-top: 1rem;
+}
+
+#imgCoracao {
+  width: 42%;
+}
+
+#btnModal,
+#btnCantinho {
+  border-radius: 2rem;
+  padding: 0.7rem 6rem;
+  color: white;
+  background-color: #800;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  transform: translateY(630%);
+}
+
+#btnModal:hover,
+#btnCantinho:hover {
+  background-color: rgb(168, 51, 51);
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+#btnCantinho a {
+  color: white;
+  text-decoration: none;
+}
+
+#imgModal {
+  width: 55%;
+}
+
+#sLove {
+  font-weight: bold;
+}
+
+.spanGiveUp {
+  font-weight: bold;
+}
+
+.h2GiveUp {
+  margin-bottom: 3rem;
+}
